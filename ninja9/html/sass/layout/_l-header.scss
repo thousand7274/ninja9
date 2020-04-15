@@ -1,0 +1,131 @@
+
+.header{
+    display: flex;
+    flex-direction: column;
+    background-color: $bgc;
+    color: $font-color;
+    &__caption{
+        font-size: small;
+        text-align: center;
+        margin:$m-1;
+        border-bottom: 1px $font-color solid;
+    }
+    &__logo{
+        text-align: center;
+    }
+    &__contact {
+        display: flex;
+        justify-content: space-between;
+        margin: $m-1;
+        a{
+            text-decoration: none;
+        }
+    }
+    &__tel{
+        background-color: transparent;
+        border: 0px  $font-color solid;
+        color:$font-color;
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        padding-top: $m-1;
+ 
+        p{
+            font-size: small;
+            color:$font-color;
+            font-weight: initial;
+            margin-top: $m-5;
+        }
+    }
+    &__contactBtn {
+         width: 50%;
+        //  padding: $m-1;
+         text-align: center;
+         border: 1px  $font-color solid;
+         background-color: $btn-b;
+         border-radius: 5px;
+         margin-left: $m-1;
+        line-height: 1.7;
+        color: $font-color;
+        font-size: 18px;
+        font-weight: bold;
+        p{
+            font-size: small;
+            color:$font-color;
+            font-weight: initial;
+        }
+     }
+}
+/* MediaQuery */
+@media only screen and (min-width: 712px) {
+    .header{
+        display: flex;
+        &__main{
+            max-width: $max-width;
+            width: 100%;
+            margin: 0 auto;
+
+        }
+        &__cont{
+            display: flex;
+            justify-content: space-between;
+        }
+        &__caption{
+            font-size: small;
+            text-align: left;
+        }
+        &__logo{
+            width: 40%;
+
+        }
+        &__contact{
+           display: flex;
+            justify-content: space-evenly;
+            width: 50%;
+            a{
+                align-items: center;
+                vertical-align: middle;
+            }
+    
+        }
+        &__tel{
+            background-color: transparent;
+            border: none;
+            border-radius: 0;
+            font-size: 24px;
+            font-weight: bold;
+            width: 100%;
+            
+           
+            p{
+                font-size: small;
+                color:$font-color;
+                font-weight: initial;
+                margin-top: $m-5;
+            }
+        }
+        &__contactBtn{
+            width: 30%;
+            text-align: center;
+            border: 1px  white solid;
+            background-color: $btn-b;
+            border-radius: 5px;
+            margin-left: 0;
+            color: $font-color;
+            line-height: 1.7;
+            font-size: 18px;
+            font-weight: bold;
+            p{
+                font-size: small;
+                color:$font-color;
+                font-weight: initial;
+                // margin-top: $m-5;
+            }
+        }
+    }
+
+
+
+}
+/* MediaQuery end */
