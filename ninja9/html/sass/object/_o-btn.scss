@@ -1,0 +1,18 @@
+.scheduleBtn{
+    text-align: center;
+    border: 3px $btn-b solid;
+    width: 50%;
+    margin: 2% auto;
+    border-radius: 5px;
+    background-color: $btn-b;
+
+    & a{
+        text-decoration: none;;
+    }
+
+    &__text{
+        padding: $m-1;
+        color: $font-color;
+
+    }
+}
