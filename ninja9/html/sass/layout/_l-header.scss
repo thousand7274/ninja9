@@ -106,7 +106,7 @@
             }
         }
         &__contactBtn{
-            width: 30%;
+            width: 100%;
             text-align: center;
             border: 1px  white solid;
             background-color: $btn-b;
@@ -116,6 +116,7 @@
             line-height: 1.7;
             font-size: 18px;
             font-weight: bold;
+            padding: $m-1;
             p{
                 font-size: small;
                 color:$font-color;
