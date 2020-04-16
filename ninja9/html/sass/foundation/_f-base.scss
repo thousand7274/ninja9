@@ -1,6 +1,7 @@
 body{
     box-sizing: border-box;
     font-size: $size-f;
+    font-family: $fm;
 }
 h2{
     font-size: $size-h2;
@@ -23,7 +24,7 @@ h3{
 i{
     margin-right: $m-5;
 }
-main{
+.container{
     margin: $m-1;
     
 }
@@ -33,10 +34,11 @@ main{
 
 /* MediaQuery */
 @media only screen and (min-width: 712px) {
-    main{
-        margin: 20px auto;
+    .container{
         max-width: $max-width;
+        margin: 20px auto;
     }
+
     h2{
         margin-bottom: $m-1 * 3;
     }
