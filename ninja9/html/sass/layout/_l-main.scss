@@ -41,8 +41,11 @@
         text-align: center;
         color:$font-color2;
         font-size: 18px;
-        width: 95%;
-        color:$font-color;
+        width: 50%;
+        & span{
+            color:$font-color2;
+            font-weight: bold;
+        }
 
         p{
             font-size: small;
@@ -52,14 +55,17 @@
     }
     &__contactBtn{
         width: 50%;
-        padding: $m-5;
+        padding: $m-1 $m-5;
         text-align: center;
         border: 1px  white solid;
         background-color: $btn-b;
         border-radius: 5px;
         margin-left: $m-1;
         font-size: 18px;
-        color:$font-color;
+        a{
+            font-weight: bold;
+            color:$font-color;
+        }
         p{
             margin-top: $m-1;
             font-size: small;
@@ -89,33 +95,47 @@
     &__icon{
         display: flex;
         justify-content: space-around;
-        padding-bottom: $m-5;
+        padding: $m-5 0;
 
         a{
             text-decoration: none;
-
             }
     }
-
 }
 .icon{
    &-line{
-       text-align: center;
-       color:#00BA01;
+       text-align: center;       
+       width: 25%;
+       border-right: 1px $font-color2 solid;
+       & a{
+        color:#00BA01;
+       }
 
    }
    &-insta{
        text-align: center;
-       color:#F16939;
+       width: 25%;
+       border-right: 1px $font-color2 solid;
+       & a{
+        color:#F16939;
+       }
    }
    &-youtube{
        text-align: center;
-       color:#DA1725;
+       width: 25%;
+       border-right: 1px $font-color2 solid;
+       & a{
+        color:#DA1725;
+       }
    }
 
    &-twitter{
        text-align: center;
-       color:#1DA1F2;
+       width: 25%;
+
+       & a{
+        color:#1DA1F2;
+       }
    }
 
 }

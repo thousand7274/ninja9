@@ -19,13 +19,13 @@
         margin: $m-1;
         a{
             text-decoration: none;
+            color:$font-color;
         }
     }
     &__tel{
         background-color: transparent;
         border: 0px  $font-color solid;
-        color:$font-color;
-        width: 100%;
+        width: 50%;
         text-align: center;
         font-size: 18px;
         font-weight: bold;
@@ -95,9 +95,9 @@
             border-radius: 0;
             font-size: 24px;
             font-weight: bold;
-            width: 100%;
-            
-           
+            width: 50%;
+
+
             p{
                 font-size: small;
                 color:$font-color;
@@ -106,14 +106,13 @@
             }
         }
         &__contactBtn{
-            width: 100%;
+            width: 40%;
             text-align: center;
             border: 1px  white solid;
             background-color: $btn-b;
             border-radius: 5px;
             margin-left: 0;
             color: $font-color;
-            line-height: 1.7;
             font-size: 18px;
             font-weight: bold;
             padding: $m-1;
